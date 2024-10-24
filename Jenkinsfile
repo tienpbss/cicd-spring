@@ -4,7 +4,7 @@ pipeline {
 
     tools { 
         maven 'my-maven' 
-        dockerTool  "docker" 
+         
     }
     environment {
         MYSQL_ROOT_LOGIN = credentials('mysql')
