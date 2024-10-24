@@ -23,7 +23,7 @@ pipeline {
 
             steps {
                 withDockerRegistry(credentialsId: 'docker_hub', url: 'https://index.docker.io/v1/') {
-                    sh 'docker build -t tienp/springboot .'
+                    sh 'docker build -t tienpb/springboot .'
                     sh 'docker push tienpb/springboot'
                 }
             }
